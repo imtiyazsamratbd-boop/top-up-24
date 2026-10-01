@@ -13,7 +13,16 @@
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
-
+<script>const firebaseConfig = {
+  apiKey: "AIzaSyDG1p5AeofWU-NNt2gS_gcY-Ao1mfuQ--Q",
+  authDomain: "best-top-up24.firebaseapp.com",
+  databaseURL: "https://best-top-up24-default-rtdb.firebaseio.com",
+  projectId: "best-top-up24",
+  storageBucket: "best-top-up24.firebasestorage.app",
+  messagingSenderId: "260015325750",
+  appId: "1:260015325750:web:cb85785f4ab89e5bc1ce97",
+  measurementId: "G-4LPE7Q0XE0"
+};</script>
     <style>
         body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; }
         .nav-gradient { background: white; color: #1e293b; }
@@ -97,7 +106,7 @@
     <header class="bg-white p-4 sticky top-0 z-40 flex justify-between items-center shadow-sm">
         <div class="flex items-center gap-2">
             <!-- UPDATED: Dynamic Logo for Header -->
-            <img id="header-logo-img" src="header-logo.jpg" class="h-8 object-contain">
+            <img id="header-logo-img" src="https://placehold.co/150x50?text=Logo" class="h-8 object-contain">
         </div>
         <div class="bg-gray-100 px-3 py-1 rounded-full text-xs font-bold text-gray-600 border border-gray-200">
             <i class="fas fa-wallet mr-1 text-pink-500"></i> ৳ <span id="header-balance">0</span>
@@ -120,7 +129,7 @@
             <!-- Dynamic Slider -->
             <div id="banner-container" class="mb-6 rounded-xl overflow-hidden shadow-md h-44 bg-gray-200 relative group">
                 <div id="slider-wrapper" class="flex h-full w-full transition-transform duration-500 ease-out">
-                    <img src="header-logo.jpg" class="w-full h-full object-cover flex-shrink-0">
+                    <img src="https://placehold.co/600x300/e2136e/FFF?text=Loading..." class="w-full h-full object-cover flex-shrink-0">
                 </div>
                 <div id="slider-dots" class="absolute bottom-3 left-0 right-0 flex justify-center gap-2 z-10"></div>
             </div>
@@ -128,7 +137,7 @@
             <!-- CONTACT & APP GRID -->
             <div class="grid grid-cols-3 gap-3 mb-5 px-2">
                 <!-- WhatsApp Button -->
-                <a id="home-whatsapp" href="" class="bg-white py-2 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col items-center justify-center gap-1.5 active:scale-95 transition h-24 no-underline">
+                <a id="home-whatsapp" href="#" class="bg-white py-2 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col items-center justify-center gap-1.5 active:scale-95 transition h-24 no-underline">
                     <div class="w-10 h-10 rounded-full flex items-center justify-center bg-green-50">
                         <i class="fab fa-whatsapp text-3xl text-[#25D366]"></i>
                     </div>
@@ -136,7 +145,7 @@
                 </a>
 
                 <!-- Telegram Button -->
-                <a id="home-telegram" href="t.me/onik9kk" class="bg-white py-2 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col items-center justify-center gap-1.5 active:scale-95 transition h-24 no-underline">
+                <a id="home-telegram" href="#" class="bg-white py-2 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col items-center justify-center gap-1.5 active:scale-95 transition h-24 no-underline">
                     <div class="w-10 h-10 rounded-full flex items-center justify-center bg-blue-50">
                         <i class="fab fa-telegram-plane text-3xl text-[#0088cc]"></i>
                     </div>
@@ -146,7 +155,7 @@
                 <!-- App Download Button -->
                 <a id="home-app-dl" href="#" target="_blank" class="bg-white py-2 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col items-center justify-center gap-1.5 active:scale-95 transition h-24 no-underline">
                     <div class="w-10 h-10 rounded-full overflow-hidden shadow-sm">
-                        <img src="service.png" 
+                        <img src="https://i.ibb.co.com/WvrTGr5Y/google-play-store-logo-1273375-804.jpg" 
                              class="w-full h-full object-cover" alt="App DL">
                     </div>
                     <span class="text-[11px] font-bold text-gray-700 text-center leading-tight">App<br>Download</span>
@@ -187,10 +196,10 @@
                         কোন সমস্যায় পড়লে হোয়াটসঅ্যাপ এ যোগাযোগ করবেন। তাহলে দ্রুত সমাধান পেয়ে যাবেন।
                     </p>
                     <div class="flex gap-4">
-                        <a id="ft-fb" href="https://www.facebook.com/Imtiyaz.samrat" class="w-10 h-10 border border-pink-300/30 rounded-lg flex items-center justify-center hover:bg-white hover:text-[#880E4F] transition"><i class="fab fa-facebook-f"></i></a>
-                        <a id="ft-insta" href="https://www.instagram.com/imtiyazsamrat?stkn=MTJ3d3N6bHcza2R4MA==" class="w-10 h-10 border border-pink-300/30 rounded-lg flex items-center justify-center hover:bg-white hover:text-[#880E4F] transition"><i class="fab fa-instagram"></i></a>
+                        <a id="ft-fb" href="#" class="w-10 h-10 border border-pink-300/30 rounded-lg flex items-center justify-center hover:bg-white hover:text-[#880E4F] transition"><i class="fab fa-facebook-f"></i></a>
+                        <a id="ft-insta" href="#" class="w-10 h-10 border border-pink-300/30 rounded-lg flex items-center justify-center hover:bg-white hover:text-[#880E4F] transition"><i class="fab fa-instagram"></i></a>
                         <a id="ft-yt" href="#" class="w-10 h-10 border border-pink-300/30 rounded-lg flex items-center justify-center hover:bg-white hover:text-[#880E4F] transition"><i class="fab fa-youtube"></i></a>
-                        <a href="mdsamrathossinbd@gmail.com"mailto:{email}" class="w-10 h-10 border border-pink-300/30 rounded-lg flex items-center justify-center hover:bg-white hover:text-[#880E4F] transition"><i class="far fa-envelope"></i></a>
+                        <a href="mailto:{email}" class="w-10 h-10 border border-pink-300/30 rounded-lg flex items-center justify-center hover:bg-white hover:text-[#880E4F] transition"><i class="far fa-envelope"></i></a>
                     </div>
                 </div>
 
@@ -208,11 +217,11 @@
                             <div class="w-10 h-10 flex items-center justify-center"><i class="fab fa-whatsapp text-3xl"></i></div>
                             <div class="border-l border-pink-300/30 pl-3 h-full flex flex-col justify-center">
                                 <span class="text-[9px] text-pink-200 uppercase tracking-wider">Help line [9AM - 10PM]</span>
-                                <span id="ft-wa-num" class="font-bold text-lg font-mono leading-none mt-0.5">+8801855996933</span>
+                                <span id="ft-wa-num" class="font-bold text-lg font-mono leading-none mt-0.5">+8801xxxxxxxxx</span>
                             </div>
                         </div>
                     </a>
-                    <a id="ft-telegram" href="t.me/onik9kk" class="block group">
+                    <a id="ft-telegram" href="#" class="block group">
                         <div class="border border-pink-300/30 rounded-lg p-2.5 flex items-center gap-3 group-hover:bg-white/10 transition">
                             <div class="w-10 h-10 flex items-center justify-center"><i class="fab fa-telegram-plane text-3xl"></i></div>
                             <div class="border-l border-pink-300/30 pl-3 h-full flex flex-col justify-center">
@@ -229,7 +238,7 @@
                         © Copyright 2026 <span id="footer-site-name" class="font-bold">Loading...</span>. All Rights Reserved.
                     </p>
                     <p class="text-xs font-medium text-pink-100 mb-0">
-                        Developed by <a href="t.me/onik9kk" target="_blank" class="text-yellow-400 font-bold hover:underline">Imtiyaz Samrat</a>
+                        Developed by <a href="https://t.me/TeamNano" target="_blank" class="text-yellow-400 font-bold hover:underline">👑 NANO OWNER 👑</a>
                     </p>
                 </div>
             </div>
@@ -451,9 +460,9 @@
     </main>
 
     <!-- FLOATING HELP BUTTON -->
-<div class="fixed bottom-24 right-4 z-40 support-float">
-  <img onclick="toggleSupportModal()" src="service.png" class="w-[70px] h-auto cursor-pointer filter drop-shadow-xl hover:scale-105 transition-transform duration-200">
-</div>
+    <div class="fixed bottom-20 right-4 z-40 support-float">
+        <img onclick="toggleSupportModal()" src="https://i.ibb.co.com/RG5qbS8t/20260120-195807.png" class="w-[150px] h-auto cursor-pointer filter drop-shadow-xl hover:scale-105 transition-transform duration-200">
+    </div>
 
     <!-- HELP POPUP MODAL -->
     <div id="support-modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-sm">
@@ -496,8 +505,8 @@
 </div>
 
 <script>
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+    // --- 1. FIREBASE CONFIGURATION ---
+    const firebaseConfig = {
   apiKey: "AIzaSyDG1p5AeofWU-NNt2gS_gcY-Ao1mfuQ--Q",
   authDomain: "best-top-up24.firebaseapp.com",
   databaseURL: "https://best-top-up24-default-rtdb.firebaseio.com",
