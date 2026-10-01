@@ -394,7 +394,20 @@ function fetchUsers() {
  renderUsers(allUsers);
  });
 }
-
+auth.onAuthStateChanged(user => {
+  if (user) {
+    // অ্যাডমিন লোড হলে ডাটা ফেচ হবে
+    fetchDeposits();
+    fetchOrders();
+    fetchUsers();
+    fetchGames();
+    fetchBanners();
+    fetchTutorials();
+    fetchSettings();
+  } else {
+    // লগইন স্ক্রিনে নিয়ে যাবে
+  }
+});
 function renderUsers(usersArray) {
  const list = document.getElementById('users-list');
  list.innerHTML = "";
